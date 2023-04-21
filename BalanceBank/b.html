@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Balance</title>
+    <link href="b.css" rel="stylesheet">
+</head>
+<body>
+    <div style="padding:10px; text-align: center;"><h1>BANK BALANCE</h1></div>
+    <div class="container">
+        <div class="box">
+            <input id="srch" type="text" placeholder="Enter bank balance">
+            <button onclick="search()" id="btn1">CALCULATE</button>
+            <!-- <button onclick="rand()" id="btn2">Random Data</button> -->
+        </div>
+        <div class="card">
+            <div id="head" style="font-size:20px; font-weight: bold; font-family:sans-serif;">Enter Required Data</div>
+        <div id="gendata">
+            <label>Withdraw</label>
+            <input type="text" id="withdraw">
+            <label>Deposit</label>
+            <input type="text" id="deposit">
+            <div>Balance</div>
+            <div id="bal"></div>
+        </div>
+        </div>
+    </div>
+    <script src="b.js"></script>
+</body>
+</html>

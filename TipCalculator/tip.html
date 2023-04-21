@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tip.css" rel="stylesheet">
+    <title>TIP CALCULATOR</title>
+</head>
+<body>
+    <div class="container" style="display: flex; flex-direction: column; width: 30%; height: 600px; padding: 50px; align-self: center; margin:auto; border-radius: 25px; border: 2px solid blue; background: #272639;">
+        <label for="billtot" id="lb" style="padding: 10px 0px 10px 0px;">Bill Total</label>
+        <input onkeyup="cal()" type="text" placeholder="$" id="bill" style="padding: 10px 0px 10px 0px;">
+        <label for="tiptot" id="lb" style="padding: 10px 0px 10px 0px;">Tip</label>
+        <input onkeyup="cal()" type="text" placeholder="%" id="tp" style="padding: 10px 0px 10px 0px;">
+        <div class="opt" style="display: flex;">
+            <div class="id1" style="width: 70%;">
+                <div style="padding: 10px 0px 10px 0px;">People</div>
+                <div style="padding: 10px 0px 10px 0px;">
+                    <button onclick="incr()" style="border-radius: 50%; background: #8990ec;">+</button>
+                    <span id="per">1</span>
+                    <button onclick="decr()" style="border-radius: 50%; background: #8990ec;">-</button>
+                </div>
+            </div>
+            <div class="id2">
+                <div style="padding: 10px 0px 10px 0px;">Total Per Person</div>
+                <h4 id="out"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="tip.js"></script>
+</body>
+</html>

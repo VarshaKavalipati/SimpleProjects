@@ -1,0 +1,23 @@
+* {
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+    color: white;
+  }
+  body {
+    background: #8990ec;
+  }
+  input{
+    background: #353959;
+  /* background: none;
+  border: none;
+  outline: none;
+  padding: none; */
+  background: #353959;
+  border-radius: 25px;
+  border: 1px solid #353959;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
+}
+  .opt{
+    justify-content: space-around;
+  }
